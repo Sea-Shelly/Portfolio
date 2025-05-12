@@ -1,10 +1,12 @@
-window.transitionToPage = function(href){
-  document.querySelector('p').style.opacity=0
-  setTimeout(function(){
+window.transitionToPage = function(href) {
+  document.querySelector('body').style.opacity = 0
+  setTimeout(function() {
     window.location.href = href
-  },500)
+  }, 500)
 }
 
-document.addEventListener('DOMContentLoaded', function(event){
-  document.querySelector('p').style.opacity = 1
+document.addEventListener('DOMContentLoaded', function(event) {
+  document.querySelector('body').style.opacity = 1
+  console.log("hello?")
 })
+
