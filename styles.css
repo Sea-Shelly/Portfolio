@@ -21,6 +21,7 @@ body{
   font-family: "JetBrains Mono", monospace;
   opacity: 0;
   transition: opacity .5s;
+  min-height: 100%;
 
 }
 p{
@@ -29,6 +30,25 @@ p{
   text-align: right;
   font-size: 64px;
   padding-right: 200px;
+}
+img{
+  position: absolute;
+  left: -150px;
+  top: 50px;
+
+}
+.pupils{
+  z-index:20;
+  left: -160px;
+
+}
+.eyes{
+  z-index: 10;
+  left: 225px;
+  top: 179px;
+}
+#person{
+  z-index: 30;
 }
 
 #backButton{
