@@ -3,12 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Digital Pieces</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bookstyles.css">
   <script src = "animations.js"></script>
+  <script src = "book.js" defer></script>
 </head>
 <body>
 <button id = "backButton" onclick = "transitionToPage(document.referrer)"> <-</button>
 
-<p>this is digital pieces</p>
+<!-- book -->
+<button id = "prev"> <</button>
+<!-- Book -->
+<div id="book" class="book">
+  <!-- page -->
+  <div id="p1" class="paper">
+    <div class="front">
+      <div id="f1" class="front-content">
+        <h1>Front 1</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div id="b1" class="back-content">
+        <h1>Back 1</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end page -->
+
+  <!-- page -->
+  <div id="p2" class="paper">
+    <div class="front">
+      <div id="f2" class="front-content">
+        <h1>Front 2</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div id="b2" class="back-content">
+        <h1>Back 2</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end page -->
+
+  <!-- page -->
+  <div id="p3" class="paper">
+    <div class="front">
+      <div id="f3" class="front-content">
+        <h1>Front 3</h1>
+      </div>
+    </div>
+    <div class="back">
+      <div id="b3" class="back-content">
+        <h1>Back 3</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end page -->
+
+<button id = "next" >></button>
 </body>
 </html>

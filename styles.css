@@ -36,6 +36,7 @@ img{
   left: -150px;
   top: 50px;
 
+
 }
 .pupils{
   z-index:20;
@@ -50,17 +51,10 @@ img{
 #person{
   z-index: 30;
 }
-
-#backButton{
-  color: white;
-  background-color: #1E1E1E;
-  border: none;
-  font-size: 64px;
-  transition: all .2s ease-in-out;
+#scary{
+  visibility: hidden;
 }
 
-#backButton:hover{
-
-  cursor: pointer;
-  transform: scale(0.8);
+#imgs{
+  overflow: hidden
 }
