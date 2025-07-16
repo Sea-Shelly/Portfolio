@@ -52,7 +52,7 @@ body {
 
 .front,
 .back {
-    background-color: white;
+    /*background-color: white;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -71,6 +71,21 @@ body {
 .back {
     z-index: 0;
 }
+#back{
+    transform: scaleX(-1);
+}
+.FrontPage{
+    width: 700px;
+    height: 900px;
+    object-fit: fill;
+    transform: scaleX(-1)
+}
+.BackPage{
+    width: 700px;
+    height: 900px;
+    transform: scaleX(-1);
+    object-fit: fill;
+}
 
 .front-content,
 .back-content {
@@ -79,6 +94,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+
 }
 
 .back-content {
