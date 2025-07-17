@@ -2,11 +2,21 @@ const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const book = document.querySelector("#book");
 
-const paper1 = document.querySelector("#p1");
-const paper2 = document.querySelector("#p2");
-const paper3 = document.querySelector("#p3");
+// const paper1 = document.querySelector("#p1");
+// const paper2 = document.querySelector("#p2");
+// const paper3 = document.querySelector("#p3");
+
+const papers = document.querySelectorAll(".paper");
+const numPapers = papers.length;
+let curr = 1;
+const max = numPapers +1;
 
 var thing = document.querySelector(':root');
+
+papers.forEach((paper,index) =>{
+    paper.style.zIndex = numPapers - index;
+});
+
 
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
@@ -15,9 +25,9 @@ nextBtn.addEventListener("click", goNextPage);
 var currentPage =0;
 
 // Business Logic
-let currentLocation = 1;
-let numOfPapers = 3;
-let maxLocation = numOfPapers + 1;
+// let currentLocation = 1;
+// let numOfPapers = 3;
+// let maxLocation = numOfPapers + 1;
 
 
 function changeArtZ(num){
@@ -41,53 +51,25 @@ function closeBook(isAtBeginning) {
 }
 
 function goNextPage() {
-    if(currentLocation < maxLocation) {
-        switch(currentLocation) {
-            case 1:
-                openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 1;
-                // changeArtZ(1);
-                break;
-            case 2:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 2;
-                // changeArtZ(2);
-                break;
-            case 3:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 3;
-                // changeArtZ(3);
-                closeBook(false);
-                break;
-            default:
-                throw new Error("unknown state");
-        }
-        currentLocation++;
+    if(curr < max) {
+        const paper = papers[curr - 1];
+        paper.classList.add("flipped");
+        paper.style.zIndex = curr;
+
+        if (curr === 1) openBook();
+        if (curr === numPapers) closeBook(false);
+        curr++;
     }
 }
 
 function goPrevPage() {
-    if(currentLocation > 1) {
-        switch(currentLocation) {
-            case 2:
-                closeBook(true);
-                paper1.classList.remove("flipped");
-                paper1.style.zIndex = 3;
-                break;
-            case 3:
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 2;
-                break;
-            case 4:
-                openBook();
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 1;
-                break;
-            default:
-                throw new Error("unknown state");
-        }
+    if(curr > 1) {
+        curr--;
+        const paper = papers[curr-1];
+        paper.classList.remove("flipped");
+        paper.style.zIndex = numPapers - curr + 1;
 
-        currentLocation--;
+        if(curr===1) closeBook(true);
+        if(curr === numPapers) openBook()
     }
 }

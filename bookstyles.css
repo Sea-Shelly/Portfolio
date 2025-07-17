@@ -86,10 +86,13 @@ body {
 }
 .art{
 
-    height: 825px;
-    width: 645px;
+    height: auto;
+    width: 500px;
+    position: absolute;
     object-fit: contain;
-    z-index: var(--zPaper) ;
+    z-index: 2;
+    top: 50px;
+    left: 50px;
 
 
 }
