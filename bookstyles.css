@@ -1,4 +1,6 @@
-
+:root{
+    --zPaper: 0;
+}
 #backButton{
     color: white;
     background-color: #1E1E1E;
@@ -72,22 +74,31 @@ body {
     z-index: 1;
 }
 
-.FrontPage{
-    width: 700px;
-    height: 900px;
-    object-fit: fill;
-    transform: scaleX(-1)
-}
-.BackPage{
-    width: 700px;
-    height: 900px;
+
+.FrontPage,.BackPage{
+    width: 625px;
+    height: 825px;
     transform: scaleX(-1);
     object-fit: fill;
+    position: relative;
+    top: 34px;
+    left: 37px;
 }
 .art{
+
+    height: 825px;
+    width: 645px;
+    object-fit: contain;
+    z-index: var(--zPaper) ;
+
+
+}
+#front,#back,#em{
     width: 700px;
     height: 900px;
-    object-fit: cover;
+    object-fit: fill;
+    align-self: center;
+    position: absolute;
 
 }
 
@@ -98,9 +109,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    /*background-color: white;*/
 
-    z-index: 2;
+
 }
 
 .back-content {

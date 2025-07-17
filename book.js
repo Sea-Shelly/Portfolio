@@ -6,15 +6,23 @@ const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
 
+var thing = document.querySelector(':root');
+
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
+
+var currentPage =0;
 
 // Business Logic
 let currentLocation = 1;
 let numOfPapers = 3;
 let maxLocation = numOfPapers + 1;
 
+
+function changeArtZ(num){
+    page.setProperty('--zPaper',num);
+}
 function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-180px)";
@@ -39,14 +47,17 @@ function goNextPage() {
                 openBook();
                 paper1.classList.add("flipped");
                 paper1.style.zIndex = 1;
+                // changeArtZ(1);
                 break;
             case 2:
                 paper2.classList.add("flipped");
                 paper2.style.zIndex = 2;
+                // changeArtZ(2);
                 break;
             case 3:
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
+                // changeArtZ(3);
                 closeBook(false);
                 break;
             default:
