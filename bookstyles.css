@@ -71,9 +71,7 @@ body {
 .back {
     z-index: 1;
 }
-#back{
-    transform: scaleX(-1);
-}
+
 .FrontPage{
     width: 700px;
     height: 900px;
