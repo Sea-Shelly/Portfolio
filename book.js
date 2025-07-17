@@ -61,7 +61,7 @@ function goNextPage() {
                 closeBook(false);
                 break;
             default:
-                throw new Error("unkown state");
+                throw new Error("unknown state");
         }
         currentLocation++;
     }

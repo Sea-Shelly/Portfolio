@@ -93,7 +93,7 @@ body {
 
 
 }
-#front,#back,#em{
+#front,#back,#em,#emB{
     width: 700px;
     height: 900px;
     object-fit: fill;
