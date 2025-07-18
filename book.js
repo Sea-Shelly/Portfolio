@@ -2,9 +2,7 @@ const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const book = document.querySelector("#book");
 
-// const paper1 = document.querySelector("#p1");
-// const paper2 = document.querySelector("#p2");
-// const paper3 = document.querySelector("#p3");
+
 
 const papers = document.querySelectorAll(".paper");
 const numPapers = papers.length;
@@ -21,18 +19,6 @@ papers.forEach((paper,index) =>{
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
-
-var currentPage =0;
-
-// Business Logic
-// let currentLocation = 1;
-// let numOfPapers = 3;
-// let maxLocation = numOfPapers + 1;
-
-
-function changeArtZ(num){
-    page.setProperty('--zPaper',num);
-}
 function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-180px)";
