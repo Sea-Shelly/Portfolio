@@ -1,15 +1,22 @@
-:root{
-    --zPaper: 0;
+@font-face{
+    font-family: RockSalt;
+    src: url("RockSalt-Regular.ttf");
+}
+
+h1{
+    font-family: RockSalt;
+    position: absolute;
+    z-index: 2;
 }
 #backButton{
     color: white;
     background-color: #1E1E1E;
     border: none;
-    font-size: clamp(20px,3vw,48px);
+    font-size: 64px;
     transition: all .2s ease-in-out;
     position: absolute;
-    top:2vh;
-    left: 2vw;
+    top:13px;
+    left: 55px;
 }
 #backButton:hover{
 
@@ -28,7 +35,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
     font-family: "JetBrains Mono", monospace;
     background-color: #1E1E1E;
@@ -38,9 +44,8 @@ body {
 .book {
     position: relative;
     margin: auto;
-    max-width: 800px;
-    width: 90vw;
-    aspect-ratio: 7/9;
+    width: 700px;
+    height: 900px;
     transition: transform 0.5s;
 }
 
@@ -56,7 +61,6 @@ body {
 
 .front,
 .back {
-    /*background-color: white;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -77,59 +81,33 @@ body {
 }
 
 
-.FrontPage,.BackPage,#front,#back,#em,#emB{
-    /*width: 625px;*/
-    /*height: 825px;*/
-    /*transform: scaleX(-1);*/
-    /*object-fit: fill;*/
-    /*position: relative;*/
-    /*top: 34px;*/
-    /*left: 37px;*/
-
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
+.FrontPage,.BackPage{
+    width: 625px;
+    height: 825px;
+    transform: scaleX(-1);
+    object-fit: fill;
+    position: relative;
+    top: 34px;
+    left: 37px;
 }
 .art{
 
-    /*height: auto;*/
-    /*width: 500px;*/
-    /*position: absolute;*/
-    /*object-fit: contain;*/
-    /*z-index: 2;*/
-    /*top: 50px;*/
-    /*left: 50px;*/
-    max-width: 90%;
-    max-height: 90%;
+    height: auto;
+    width: 500px;
+    position: absolute;
     object-fit: contain;
-<<<<<<< HEAD
-=======
     z-index: 2;
     top: 50px;
     left: 50px;
-
-
 }
 #front,#back,#em,#emB{
     width: 700px;
     height: 900px;
     object-fit: fill;
     align-self: center;
->>>>>>> parent of 87b1d26 (Clean up)
     position: absolute;
-    z-index: 2;
-    top: 5%;
-    left: 5%;
-}
-/*#front,#back,#em,#emB{*/
-/*    width: 700px;*/
-/*    height: 900px;*/
-/*    object-fit: fill;*/
-/*    align-self: center;*/
-/*    position: absolute;*/
 
-/*}*/
+}
 
 .front-content,
 .back-content {
@@ -138,8 +116,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: white;*/
-
 
 }
 
@@ -155,14 +131,12 @@ body {
 
 /* Controller Buttons */
 #prev,#next {
-   position: absolute;
+    position: absolute;
     top:50%;
     transform: translateY(-50%);
     z-index: 1000;
-    /*font-size: 50px;*/
-    font-size: 5vw;
-    /*padding: 10px 20px;*/
-    padding: 1vw 2vw;
+    font-size: 50px;
+    padding: 10px 20px;
     background: none;
     border: none;
     cursor: pointer;
@@ -170,25 +144,8 @@ body {
 }
 
 #prev{
-    /*left: 350px;*/
-    left: 5vw;
+    left: 350px;
 }
 #next{
-    /*right:350px;*/
-    right: 5vw;
-}
-
-
-
-/* Paper stack order */
-#p1 {
-    z-index: 3;
-}
-
-#p2 {
-    z-index: 2;
-}
-
-#p3 {
-    z-index: 1;
+    right:350px;
 }
