@@ -20,7 +20,7 @@ papers.forEach((paper,index) =>{
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 function openBook() {
-    book.style.transform = "translateX(50%)";
+    book.style.transform = "translateX(25%)";
     prevBtn.style.transform = "translateX(-180px)";
     nextBtn.style.transform = "translateX(180px)";
 }
@@ -32,8 +32,8 @@ function closeBook(isAtBeginning) {
         book.style.transform = "translateX(100%)";
     }
 
-    prevBtn.style.transform = "translateX(0px)";
-    nextBtn.style.transform = "translateX(0px)";
+    prevBtn.style.transform = "translateX(0%)";
+    nextBtn.style.transform = "translateX(0%)";
 }
 
 function goNextPage() {
