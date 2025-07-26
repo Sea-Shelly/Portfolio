@@ -21,7 +21,7 @@ body{
   font-family: "JetBrains Mono", monospace;
   opacity: 0;
   transition: opacity .5s;
-  min-height: 100%;
+
 
 }
 p{
@@ -29,24 +29,24 @@ p{
   font-family: "JetBrains Mono", monospace;
   text-align: right;
   font-size: 64px;
-  padding-right: 200px;
+  padding-right: 10.4%;
 }
 img{
   position: absolute;
-  left: -150px;
-  top: 50px;
+  left: -7.8%;
+  top: 5.6%;
 
 
 }
 .pupils{
   z-index:20;
-  left: -160px;
+  left: -8.55%;
 
 }
 .eyes{
   z-index: 10;
-  left: 225px;
-  top: 179px;
+  left: 16.7%;
+  top: 23%;
 }
 #person{
   z-index: 30;
@@ -57,4 +57,12 @@ img{
 
 #imgs{
   overflow: hidden
+}
+#wrapper{
+  width: 100%;
+  height: 100%;
+  max-width: 1480px;
+  max-height:1920px;
+
+
 }
