@@ -22,12 +22,7 @@ papers.forEach((paper,index) =>{
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
-var currentPage =0;
 
-// Business Logic
-// let currentLocation = 1;
-// let numOfPapers = 3;
-// let maxLocation = numOfPapers + 1;
 
 
 function changeArtZ(num){
@@ -35,15 +30,16 @@ function changeArtZ(num){
 }
 function openBook() {
     book.style.transform = "translateX(25%)";
-    prevBtn.style.transform = "translateX(-180px)";
-    nextBtn.style.transform = "translateX(180px)";
+    prevBtn.style.transform = "translateX(-40%)";
+    nextBtn.style.transform = "translateX(25%)";
+
 }
 
 function closeBook(isAtBeginning) {
     if(isAtBeginning) {
         book.style.transform = "translateX(0%)";
     } else {
-        book.style.transform = "translateX(100%)";
+        book.style.transform = "translateX(65%)";
     }
 
     prevBtn.style.transform = "translateX(0%)";

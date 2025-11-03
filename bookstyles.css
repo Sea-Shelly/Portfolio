@@ -132,8 +132,7 @@ body {
 /* Controller Buttons */
 #prev,#next {
     position: absolute;
-    top:25%;
-    transform: translateY(-50%);
+    top:20%;
     z-index: 1000;
     font-size: 350%;
     padding: 10% 20%;
@@ -144,8 +143,8 @@ body {
 }
 
 #prev{
-    left: -4%;
+    left: 7%;
 }
 #next{
-    right:-4%;
+    right:-2%;
 }
