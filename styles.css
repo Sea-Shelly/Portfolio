@@ -1,7 +1,7 @@
 h1{
   color: white;
   font-family: "JetBrains Mono", monospace;
-  font-size: 96px;
+  font-size: 390%;
   text-align: center;
   background-color: #1E1E1E;
 
@@ -28,7 +28,7 @@ p{
   color : white;
   font-family: "JetBrains Mono", monospace;
   text-align: right;
-  font-size: 64px;
+  font-size: 377%;
   padding-right: 10.4%;
 }
 img{
@@ -47,9 +47,10 @@ img{
   z-index: 10;
   left: 16.7%;
   top: 23%;
+  visibility: hidden;
 }
-#person{
-  z-index: 30;
+#help{
+  z-index: 5;
 }
 #scary{
   visibility: hidden;
