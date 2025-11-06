@@ -21,7 +21,7 @@ nextBtn.addEventListener("click", goNextPage);
 
 
 function openBook() {
-    book.style.transform = "translateX(25%)";
+    book.style.transform = "translateX(35%)";
     prevBtn.style.transform = "translateX(-30%)";
     nextBtn.style.transform = "translateX(40%)";
 
@@ -29,9 +29,9 @@ function openBook() {
 
 function closeBook(isAtBeginning) {
     if(isAtBeginning) {
-        book.style.transform = "translateX(-10%)";
+        book.style.transform = "translateX(5%)";
     } else {
-        book.style.transform = "translateX(55%)";
+        book.style.transform = "translateX(65%)";
     }
 
     prevBtn.style.transform = "translateX(0%)";
