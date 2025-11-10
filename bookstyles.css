@@ -15,8 +15,8 @@ h1{
     font-size: 400%;
     transition: all .2s ease-in-out;
     position: absolute;
-    top:2%;
-    left: 2%;
+    top:-10%;
+    left: -5%;
 }
 #backButton:hover{
 
@@ -148,4 +148,12 @@ body {
 }
 #next{
     right:3%;
+}
+
+#wrapper{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
 }

@@ -1,0 +1,60 @@
+h1{
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 390%;
+    text-align: center;
+    background-color: #1E1E1E;
+
+}
+.clickLink{
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+a:hover, .clickLink:hover span, .clickLink:hover,#tab1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+body{
+    background-color: #1E1E1E;
+    font-family: "JetBrains Mono", monospace;
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+p{
+    color : white;
+    font-family: "JetBrains Mono", monospace;
+    text-align: right;
+    font-size: 377%;
+    padding-right: 3%;
+    position: absolute;
+    left: 60%;
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1480px;
+    max-height: 1920px;
+    position: absolute;
+    left: 10%;
+}
+
+
+
+img{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#tab1{
+    position: absolute;
+    top: 41%;
+    left: 75%;
+    z-index: 3;
+}
