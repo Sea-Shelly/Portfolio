@@ -67,5 +67,38 @@ img{
   max-width: 1480px;
   max-height: 1920px;
   position: absolute;
-  left: 10%;
+
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropButton{
+  cursor: pointer;
+  color : white;
+  font-family: "JetBrains Mono", monospace;
+  text-align: right;
+  font-size: 377%;
+  padding-right: 3%;
+
+}
+
+.dropContent{
+  color : white;
+  font-family: "JetBrains Mono", monospace;
+  text-align: right;
+  font-size: 377%;
+  padding-right: 3%;
+  display:none;
+  position: absolute;
+  right: 0;
+}
+
+.dropContent span{
+  display: block;
+}
+
+.dropdown:hover .dropContent{
+  display:block;
 }
