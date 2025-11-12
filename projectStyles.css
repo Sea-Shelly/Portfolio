@@ -10,7 +10,7 @@ h1{
     transition: all .2s ease-in-out;
     display: inline-block;
 }
-a:hover, .clickLink:hover span, .clickLink:hover,#tab1:hover{
+a:hover, .clickLink:hover span, .clickLink:hover,.tabs:hover{
     text-decoration: underline;
     cursor: pointer;
     transform: scale(0.9);
@@ -35,15 +35,45 @@ p{
 #wrapper {
     width: 100%;
     height: 100%;
-    max-width: 1480px;
+    max-width: 1080px;
     max-height: 1920px;
     position: absolute;
-    left: 10%;
+    left: 1%;
+    top: -10%
+}
+
+.tabs{
+    position: relative;
+    display: inline-block;
+    transition: top 0.4s ease, left 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+
 }
 
 
+.tabs img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    object-fit: cover;
 
-img{
+}
+
+.overlayText{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    font-size: 1.5em;
+    font-family: "JetBrains Mono", monospace;
+    z-index: 11;
+    pointer-events: none;
+}
+
+#folder{
     position: absolute;
     top: 40%;
     left: 40%;
@@ -53,8 +83,7 @@ img{
 }
 
 #tab1{
-    position: absolute;
-    top: 41%;
+    top: 43%;
     left: 75%;
-    z-index: 3;
+
 }
