@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+body{
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+img{
+    display: block;
+    margin: auto;
+    max-width: 40%;
+    height: auto;
+}
+
+p{
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 2vw;
+}
