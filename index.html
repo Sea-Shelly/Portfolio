@@ -1,51 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <link rel = "stylesheet" href="styles.css">
-  <script src = "animations.js"></script>
-  <script src = "follow.js"></script>
-  <script src = "ChangeImage.js"></script>
-  <title> TheDarkArts &rsquo;Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = transition.js></script>
+    <link rel = "styleSheet" href = "main.css">
+    <title>TheDarkArts' Portfolio</title>
 </head>
 
 <body>
-<main>
-  <div id = "wrapper">
-  <h1>TheDarkArts <br> Portfolio</h1>
-  <!-- Add your site or application content here -->
-  <p>
-    <div class = "dropdown">
-    <span class = "dropButton clickLink grow">Art</span>
-    <div class = "dropContent">
-      <span class = "clickLink grow" onclick="transitionToPage('characterdesignpage.html')" >Character Design</span>
-      <br>
-      <span  class = "clickLink grow" onclick="transitionToPage('digitalpage.html')">Digital</span>
-      <br>
-      <span  class = "clickLink grow" onclick="transitionToPage('traditionalpage.html')">Traditional</span>
-      <br>
-      <span  class = "clickLink grow" onclick="transitionToPage('3dpage.html')">3D</span>
+<header>TheDarkArts <br> Portfolio</header>
+<section>
+<div id = "nav">
+    <div class = "dropdown"> Art
+        <div class = "dropdownContent" onclick = "transitionToPage('digitalpage.html')">Digital</div>
+        <div class = "dropdownContent" onclick = "transitionToPage('digitalpage.html')">Traditional</div>
+        <div class = "dropdownContent" onclick = "transitionToPage('digitalpage.html')">3D</div>
     </div>
-  </div>
-
+    <span class = "clickLink" onclick = "transitionToPage('digitalpage.html')">Code</span>
     <br>
-    <span  class = "clickLink grow" onclick="transitionToPage('contactpage.html')">Contact</span>
-  <div id = "imgs">
-    <div class = "child">
-      <img src = "pupils.png" alt = "looksies" class = "pupils" >
-      <img src = "whites2.png" class = "eyes" alt = "it burns!">
-      <img src = "normalbasewithwhites.png" alt = "Hello!"  id = "help">
-    </div>
+    <span class = "clickLink" onclick = "transitionToPage('digitalpage.html')">Contact</span>
 
-    <div class = "child">
-      <img src = "dopplerganger.png" alt = "Hello?">
-    </div>
-  </div>
-
-
-  </p>
-  </div>
-</main>
+</div>
+</section>
 </body>
 </html>
