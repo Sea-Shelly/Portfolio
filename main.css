@@ -13,15 +13,21 @@ header{
     font-size: 4vw;
 }
 
-
+.Wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-right: 20%;
+}
 #nav{
+    display: inline-block;
     text-align: right;
     font-size: 3vw;
-    padding-top: 5%;
-    padding-right: 10%;
     font-family: "JetBrains Mono", monospace;
     color: white;
 }
+
 
 
 .dropdown{
@@ -59,3 +65,13 @@ header{
     cursor:pointer;
 }
 
+.person{
+    display: inline-block;
+}
+.person img{
+    margin-left: 60%;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
