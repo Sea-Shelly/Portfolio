@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = transition.js></script>
-    <script src = "DrawLines.js"></script>
     <link rel = "styleSheet" href = "main.css">
     <title>TheDarkArts' Portfolio</title>
 </head>
 
 <body>
-<header>TheDarkArts <br> Portfolio</header>
-<section>
-    <div class = "Wrapper">
-<!--        <div class = "person">-->
-<!--            <img src = normalbasewithwhites.png>-->
-<!--        </div>-->
-        <div id = "nav">
-            <div class = "dropdown"> Art
-                <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">Digital</div>
-                <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">Traditional</div>
-                <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">3D</div>
+<div class = "container">
+    <header>TheDarkArts <br> Portfolio
+        <div class = "fuzzyOverlay"></div>
+    </header>
+    <section>
+        <div class = "Wrapper">
+            <div class = "person">
+                <img src = normalbasewithwhites.png>
             </div>
-            <span class = "clickLink" onclick = "transitionToPage('oops.html')">Code</span>
-            <br>
-            <span class = "clickLink" onclick = "transitionToPage('oops.html')">Contact</span>
+            <div id = "nav">
+                <div class = "dropdown"> Art
+                    <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">Digital</div>
+                    <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">Traditional</div>
+                    <div class = "dropdownContent" onclick = "transitionToPage('oops.html')">3D</div>
+                </div>
+                <span class = "clickLink" onclick = "transitionToPage('oops.html')">Code</span>
+                <br>
+                <span class = "clickLink" onclick = "transitionToPage('oops.html')">Contact</span>
+            </div>
+
         </div>
+    </section>
+    <div class = "fuzzyOverlay"></div>
+    <div class = "lines"></div>
+</div>
 
-    </div>
 
-
-</section>
 </body>
 </html>

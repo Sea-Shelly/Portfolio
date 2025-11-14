@@ -4,6 +4,10 @@
     box-sizing: border-box;
     background-color: #1E1E1E;
 }
+.container{
+    overflow: hidden;
+    position: relative;
+}
 body{
     opacity: 0;
     transition: opacity .5s;
@@ -78,3 +82,35 @@ header{
 
 }
 
+.fuzzyOverlay{
+    position: absolute;
+    inset: -200%;
+    background-image: url("white-noise-screen.png");
+    opacity: 2%;
+    z-index: 10;
+    pointer-events: none;
+
+    animation: shift 0.2s linear infinite both;
+}
+
+.lines{
+    position: absolute;
+    inset: -200%;
+    background-image: url("1.png");
+    background-size: cover;
+    opacity: 5%;
+    z-index: 11;
+    pointer-events: none;
+
+    animation: shift 1.5s linear infinite forwards;
+}
+
+@keyframes shift {
+    0%{
+       transform: translateX(10%) translateY(10%);
+    }
+
+    100%{
+        transform: translateX(-10%) translateY(-10%);
+    }
+}
