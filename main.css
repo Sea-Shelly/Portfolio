@@ -69,15 +69,30 @@ header{
     cursor:pointer;
 }
 
-.person{
-    display: inline-block;
-}
-.person img{
-    margin-left: 45%;
-    position: relative;
-    width: 100%;
-    height: auto;
 
+.images{
+    display: inline-block;
+    position: relative;
+    margin-left: 45%;
+    width: 50%;
+    height: auto;
+    overflow: visible;
+}
+.images img{
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+}
+
+.base{
+    z-index: 5;
+}
+
+.pupils{
+    z-index: 6;
+}
+.clone{
+    display: none;
 }
 
 .fuzzyOverlay{
