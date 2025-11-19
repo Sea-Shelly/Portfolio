@@ -5,6 +5,8 @@
 .container{
     overflow: hidden;
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 body{
     opacity: 0;
@@ -69,29 +71,31 @@ header{
     cursor:pointer;
 }
 
-
+.person{
+    position: relative;
+}
 .images{
     display: inline-block;
-    position: relative;
-    margin-left: 45%;
+    /*margin-left: 10%;*/
     width: 50%;
     height: auto;
     overflow: visible;
 }
-.images img{
-    position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
-}
+
 
 .base{
+    position: relative;
     z-index: 5;
+    top: 0%;
+    left: 0%;
 }
 
 .pupils{
+    position: absolute;
     z-index: 6;
 }
 .clone{
+    position: absolute;
     display: none;
 }
 
