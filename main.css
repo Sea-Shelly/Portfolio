@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    background-color: #1E1E1E;
 }
 .container{
     overflow: hidden;
@@ -11,6 +10,7 @@
 body{
     opacity: 0;
     transition: opacity .5s;
+    background-color: #1E1E1E;
 }
 header{
     text-align: center;
@@ -73,10 +73,11 @@ header{
 
 .person{
     position: relative;
+    display: inline-block;
 }
 .images{
     display: inline-block;
-    /*margin-left: 10%;*/
+    margin-left: 10%;
     width: 50%;
     height: auto;
     overflow: visible;
@@ -84,18 +85,19 @@ header{
 
 
 .base{
-    position: relative;
+    display: block;
     z-index: 5;
-    top: 0%;
-    left: 0%;
+
 }
 
 .pupils{
     position: absolute;
+    top: -10.5%;
+    left: -36.5%;
     z-index: 6;
+    transform: translate(-50%,-50%);
 }
 .clone{
-    position: absolute;
     display: none;
 }
 
