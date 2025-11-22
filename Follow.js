@@ -8,9 +8,9 @@ document.addEventListener('mousemove',(event) =>{
 
     const rect = base.getBoundingClientRect();
 
-    const centerX = rect.left + (rect.width) /2;
-    const centerY = rect.top + (rect.height*0.10)/2;
 
+    const centerX = pupil.getBoundingClientRect().left + pupil.getBoundingClientRect().width/2;
+    const centerY = pupil.getBoundingClientRect().top + pupil.getBoundingClientRect().height/2;
     const dx = mouseX - centerX;
     const dy = mouseY - centerY;
 
