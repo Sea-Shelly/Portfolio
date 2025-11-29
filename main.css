@@ -89,12 +89,22 @@ header{
     z-index: 5;
 
 }
+.eyeWrapper{
+    position: relative;
+    display: inline-block;
+}
+.whites{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    visibility: hidden;
 
+}
 .pupils{
     position: absolute;
-    top: -10.5%;
-    left: -36.5%;
-    z-index: 6;
+    top: 44.5%;
+    left: 42%;
+    z-index: 7;
     transform: translate(-50%,-50%);
 }
 .clone{
