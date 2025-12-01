@@ -114,7 +114,7 @@ header{
 .fuzzyOverlay{
     position: absolute;
     inset: -200%;
-    background-image: url("white-noise-screen.png");
+    background-image: url("Overlay/white-noise-screen.png");
     opacity: 2%;
     z-index: 10;
     pointer-events: none;
@@ -125,7 +125,7 @@ header{
 .lines{
     position: absolute;
     inset: -200%;
-    background-image: url("1.png");
+    background-image: url("Overlay/1.png");
     background-size: cover;
     opacity: 5%;
     z-index: 11;
