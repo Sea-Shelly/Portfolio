@@ -33,6 +33,17 @@ p{
     user-select: none;
 }
 
+a{
+    box-shadow: none;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 3vw;
+    left: 5%;
+    border: none;
+    text-underline: none;
+
+}
+
 .fuzzyOverlay{
     position: absolute;
     inset: -200%;
