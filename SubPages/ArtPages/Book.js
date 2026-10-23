@@ -1,6 +1,7 @@
 const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const book = document.querySelector("#book");
+const cover = document.querySelector("#cover");
 
 
 const papers = document.querySelectorAll(".paper");
@@ -24,6 +25,7 @@ function openBook() {
     book.style.transform = "translateX(35%)";
     prevBtn.style.transform = "translateX(-30%)";
     nextBtn.style.transform = "translateX(40%)";
+    cover.style.opacity = "1"
 
 }
 
@@ -36,6 +38,7 @@ function closeBook(isAtBeginning) {
 
     prevBtn.style.transform = "translateX(0%)";
     nextBtn.style.transform = "translateX(0%)";
+    cover.style.opacity = "0"
 }
 
 function goNextPage() {
