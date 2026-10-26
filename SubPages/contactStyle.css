@@ -10,13 +10,37 @@
 body{
     background-color: #1E1E1E;
 }
+.Wrapper{
+    height: 100vh;
+    display: flex;
+}
 .paper{
-    width: 20%;
-    height: 50%;
+    width: 50%;
+    height: 120%;
+    position: fixed;
+    top: 0%;
+    left: 25%;
+    background-color: white;
+}
+
+#sticky{
+    width: auto;
+    height: 40%;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    z-index: 2;
+    filter: drop-shadow(1vh 1vh 10px #000000);
+}
+
+#nokia{
+    width: auto;
+    height: 100%;
     position: relative;
     top: 0%;
-    left: 0%;
-    background-color: white;
+    left: 90%;
+    z-index: 3;
+    rotate: 270deg
 }
 .fuzzyOverlay{
     position: absolute;
